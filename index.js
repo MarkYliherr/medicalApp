@@ -41,7 +41,7 @@ function register () {
 
     alert('Account Creation success.')
     
-    window.location.href = "/Dashboard/dashboard.html";
+    window.location.href = "dashboard.html";
   })
   
   .catch(function(error) {
