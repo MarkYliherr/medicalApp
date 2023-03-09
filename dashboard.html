@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard</title>
+  <link rel="stylesheet" href="dashboard.css">
+</head>
+
+<body>
+  <div class="container">
+    <form action="" id="contactForm">
+      <div class="alert">Your message was sent, help will be there immediately!</div>
+
+      <div class="inputBox">
+        <input type="text" id="name" placeholder="Full Name....(optional)" />
+      </div>
+
+      <div class="inputBox">
+        <input type="text" id="contactNo" placeholder="Contact Number.....(optional)" />
+      </div>
+
+      <div class="inputBox">
+        <textarea id="msgContent" cols="30" rows="10" placeholder="I'm at room.....(required)"></textarea>
+      </div>
+
+      <div class="inputBox">
+        <button type="submit">SEND HELP</button>
+      </div>
+      
+      <label>
+        <input type="checkbox" id="remember-me" />
+        <span>Remember Me</span>
+      </label>
+    </form>
+  </div>
+  
+  <a href="/Home/index.html">Log Out</a>
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js"></script>
+  <script src="dashboard.js"></script>
+</body>
+
+</html>
