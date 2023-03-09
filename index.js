@@ -77,7 +77,7 @@ function login () {
     // DOne
     alert('Account Login success.')
     
-    window.location.href = "/Dashboard/dashboard.html";
+    window.location.href = "dashboard.html";
     
   })
 
