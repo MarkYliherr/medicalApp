@@ -58,7 +58,7 @@ label span {
   position: relative;
   padding-left: 30px;
   cursor: pointer;
-  color: white;
+  color: black;
 }
 
 label span:before {
