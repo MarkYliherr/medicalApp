@@ -1,0 +1,132 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-image: url('/bg.jpeg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 300px;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+}
+
+.alert {
+  display: none;
+  background-color: #3cba54;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  font-size: 18px;
+}
+
+.alert.show {
+  display: block;
+}
+
+.inputBox {
+  position: relative;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.inputBox input,
+.inputBox textarea {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #f5f5f5;
+}
+
+.inputBox label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 10px;
+  pointer-events: none;
+  transition: all 0.2s ease;
+  color: #999;
+}
+
+.inputBox input:focus + label,
+.inputBox textarea:focus + label,
+.inputBox input:not(:placeholder-shown) + label,
+.inputBox textarea:not(:placeholder-shown) + label {
+  top: -20px;
+  left: 0;
+  font-size: 14px;
+  color: #000;
+}
+
+button[type="submit"] {
+  width: 100%;
+  padding: 50px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: red;
+  color: #fff;
+  font-size: 30px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+button[type="submit"]:hover {
+  background-color: #a40000;
+}
+
+a {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  padding: 10px;
+  background-color: #2a9d8f;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 18px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+a:hover {
+  background-color: #21867a;
+}
+
+label input[type="checkbox"] {
+  display: none;
+}
+
+label input[type="checkbox"]:checked+span:before {
+  content: "\2714";
+  text-align: center;
+  line-height: 20px;
+  background-color: #3cba54;
+  color: #fff;
+  border-color: #3cba54;
+}
